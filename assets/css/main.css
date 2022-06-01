@@ -1,0 +1,96 @@
+:root {
+    --color-primary: #fff;
+    --container-padding: 20px;
+    --border-radius-primary: 10px;
+}
+
+body {
+    background-color: #e9e9e9;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input {
+    flex: 1;
+    border: none;
+    height: 100%;
+    outline: none;
+    font-size: 20px;
+}
+
+.submit-btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+    color: #f8f8f8;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.submit-btn:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.list {
+    list-style: none;
+    margin-top: 50px;
+    background-color: var(--color-primary);
+    padding: var(--container-padding);
+    border-radius: var(--border-radius-primary);
+}
+
+.list-item {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.list-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.list-item span {
+    flex: 1;
+}
+
+.list-item input:checked + span {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(238, 15, 15);
+    color: #f8f8f8;
+    border-radius: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.delete-btn:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
